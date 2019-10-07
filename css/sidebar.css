@@ -1,0 +1,146 @@
+/*
+
+	@ File : sidebar.css
+	@ Author : Hassen Chougar, Service Cartographie
+	@ Date : 08/2019
+
+	@ For : ViZonage - Carte interactive des contrats et zonages de politiques publiques
+	@ Main file : index.html
+
+	@ Description : fichier de style de la sidebar du fichier index.html
+									(le reste des styles se trouvent dans sidebar.css)
+
+	@ Pour naviguer entre les éléments, copier-coller un nom de section dans un CTRL+F
+
+*/
+
+
+/*/////////////////////////// barre latérale  ////////////////////////////////*/
+#sidebar,#sidebar-panel {
+	position: absolute;
+	margin:0.50%;
+	height: 98.2%;
+	background: linear-gradient(#004494, rgb(255,255,255));
+	z-index: 500;
+  box-shadow: 0.05px 0 5px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0.05px 0 5px rgba(0,0,0,.5); /* chromium based browsers */
+  -moz-box-shadow: 0.05px 0 5px rgba(0,0,0,.5); /* firefox */
+}
+
+#sidebar {
+	border-radius:5px;
+}
+
+/*/////////////////////////// panneau latéral  ////////////////////////////////*/
+#sidebar-panel {
+	width: 0px;
+	left: 0.50%;
+	position: absolute;
+	opacity:.8;
+  color: white;
+  opacity: 0.9;
+  overflow-x: auto;
+  overflow-y: scroll;
+  transition: width 0.35s ease-in-out ;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#content {
+	width: 400px;
+	position: absolute;
+	left: 70px;
+}
+
+ul {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+/* /////////////////////////////// boutons //////////////////////////////// */
+#homeBtn {
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	background: #004494;
+	padding: 15px;
+	border: none;
+	border-bottom: 0.5px solid rgba(255,255,255,0.5);
+	-moz-border-bottom: 0.5px solid rgba(255,255,255,0.5);
+	outline: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#closeContent {
+  width: 50px;
+	right: -27%;
+	text-align: center;
+  position: absolute;
+  /* color: white; */
+  padding-top: 20px;
+  border: none;
+	background: rgba(0,0,0,0);
+	transition: 0.1s all;
+	cursor: pointer;
+}
+
+#closeContent:hover {
+	background: rgba(0,0,0,0)
+}
+
+
+#fiche {
+	display: none;
+	/* padding-top: 50px; */
+}
+
+/* ***************************** ------ 5 ------ **************************** */
+/* ******************************* SCROLLBAR ******************************** */
+/* ***************************** --------------- **************************** */
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(50,50,50,.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0,0,0,.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0,0,0,.2);
+}
+
+/* width */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-moz-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(50,50,50,.1);
+}
+
+/* Handle */
+::-moz-scrollbar-thumb {
+  background: rgb(0,0,0,.3);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover {
+  background: rgb(0,0,0,.2);
+}

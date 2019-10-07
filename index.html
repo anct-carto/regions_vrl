@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Regions VRL</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/src/leaflet.css">
+    <script type="text/javascript" src="lib/leaflet.js"></script>
+    <script type="text/javascript" src="lib/d3.min.js"></script>
+    <script type="text/javascript" src='lib/tabletop.min.js'></script>
+  </head>
+  <body>
+    <div id="sidebar-container">
+      <div id="sidebar-panel">
+        <div id="content">
+          <button type="button" name="close" id = "closeContent">
+            <img src="css/img/arrow.svg">
+          </button>
+          <h2>Formations</h2>
+          <h1>
+             Valeurs de la République et laïcité
+          </h1>
+          <i>Où trouver une formation, dans ma région ?</i>
+          <hr>
+          <div id="intro">
+            <p>Vous souhaitez connaître l’offre de formation Valeurs de la République et laïcité dans votre région, vous inscrire à une session de formation ou devenir formateur ?</p>
+            <p>Cliquez sur la région de votre choix sur la carte ci-contre pour accéder aux informations pratiques ! </p>
+            <p><b>NB</b> : Les modalités d’inscription en formation varient selon les régions et les organisateurs.
+              En revanche, le contenu pédagogique est identique pour toutes les sessions de formation et
+              l’inscription est toujours gratuite (pas de frais pédagogiques à la charge des participants).</p>
+          </div>
+          <div id="fiche">
+            <!-- fiche territoire -->
+          </div>
+        </div>
+      </div>
+      <div id="sidebar">
+        <ul class="sidebar-top">
+          <!-- bouton principal -->
+          <li>
+            <button class = "sidebar" type="button" id = "homeBtn">
+              <img src="css/img/layers.svg" height = "20px" width = "20px">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- barre latérale -->
+    <div id="mapid"></div>
+  </body>
+  <script type="text/javascript" src= "js/ui.js"></script>
+  <script type="text/javascript" src= "js/map_init.js"></script>
+</html>

@@ -1,0 +1,95 @@
+/*
+
+	@ File : style.css
+	@ Author : Hassen Chougar, Service Cartographie
+	@ Date : 08/2019
+
+	@ For : ViZonage - Carte interactive des contrats et zonages de politiques publiques
+	@ Main file : index.html
+
+	@ Description : fichier de style du fichier index.html
+									(style de la sidebar dans sidebar.css)
+
+	@ Pour naviguer entre les éléments, copier-coller un nom de section dans un CTRL+F
+
+*/
+
+body {
+	padding: 0;
+	margin:0;
+}
+
+button {
+	cursor: pointer;
+	border:none;
+	background: rgba(0,0,0,.1)
+}
+
+html, body, #mapid {
+	height: 100%;
+	display: block;
+	font-family: 'lato-light';
+  overflow-y: hidden;
+}
+
+.leaflet-tooltip-left.tooltip {
+	position: sticky;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'lato-regular';
+	font-weight: lighter;
+}
+
+#fiche {
+	padding-top: 0px;
+	/* position: absolute; */
+}
+
+#content p {
+	font-size: 1em;
+}
+
+hr {
+	margin-left: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: block;
+	width: 30px;
+	color: rgb(255,20,40);
+	border: solid 3px;
+}
+
+#backBtn {
+	font-size: 1em;
+	padding:10px;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: rgba(0,0,0,0.05);
+	color:white;
+	display: block;
+	margin-top: 20px;
+	left: 0px;
+}
+
+#backBtn span {
+	display: inline-block;
+	padding-top: -25px;
+	z-index: 10000;
+}
+
+#fiche a {
+	text-decoration: none;
+	color: blue;
+	text-decoration: underline;
+}
+
+.picto {
+	z-index: -500;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: -40px;
+	opacity: .1;
+	height: 250px;
+	padding: 5px;
+}
