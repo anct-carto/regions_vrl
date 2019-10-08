@@ -62,7 +62,8 @@ ul {
 #homeBtn {
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
-	background: #004494;
+	background: rgba(0,0,0,0);
+	/* background: #004494; */
 	padding: 15px;
 	border: none;
 	border-bottom: 0.5px solid rgba(255,255,255,0.5);
@@ -70,6 +71,11 @@ ul {
 	outline: 0px;
 	text-align: center;
 	cursor: pointer;
+}
+
+#homeBtn:hover {
+	background: rgba(0,0,0,.3);
+	transition: 0.15s;
 }
 
 #closeContent {
