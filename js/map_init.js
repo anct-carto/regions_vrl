@@ -87,7 +87,7 @@ fetch(cercles_drom)
 function highlightFeature(e) {
 	var layer = e.target;
 	layer.setStyle({
-		weight: 5,
+		weight: 2.5,
 		color: 'white',
 		dashArray: '',
 		fillOpacity: 0.7

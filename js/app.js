@@ -111,7 +111,8 @@ function drawregions() {
               // bouton retour
               let retour = document.createElement('button');
               retour.id = 'backBtn';
-              retour.innerHTML = "<img src='css/img/arrow.svg' width = '20px'>"+'<span>Retour</span>';
+              retour.innerHTML = "<img src='css/img/arrow.svg' width = '20px'>"
+              +"<span>Retour à l'accueil</span>";
               featureInfo.appendChild(retour);
               retour.addEventListener("click", function() {
                 hideFiche();

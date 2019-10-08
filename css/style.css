@@ -33,10 +33,13 @@ html, body, #mapid {
 }
 
 .leaflet-tooltip-top.tooltip {
+	background: rgba(200,20,20,1);
+	color:white;
+	border:none;
 	position: sticky;
 	font-family: 'lato-bold';
 	font-size: 1.2em;
-
+	text-transform: uppercase;
 }
 
 h1 {
