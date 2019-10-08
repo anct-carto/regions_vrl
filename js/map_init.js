@@ -192,6 +192,7 @@ function drawregions() {
               }
               showFiche();
               // récupération des différentes variables
+              region = tabDrive[i].lib_reg;
               contact = info(tabDrive[i].contact);
               contact2 = info(tabDrive[i].contact2);
               contact3 = info(tabDrive[i].contact3);
@@ -199,14 +200,15 @@ function drawregions() {
               email = info(tabDrive[i].mail) ;
               phone = info(tabDrive[i].tel) ;
               url = info(tabDrive[i].url);
-              tab = [contact,contact2,contact3,structure,phone,email]
+              tab = [contact,contact2,contact3,structure,email,phone]
               for (let i in tab) {
-                console.log(i);
                 if (tab[i] == 'non') {
-                  featureInfo.innerHTML ="<p>Retrouvez les dates de formation et les contacts pour vous y inscrire <b><a href = '"+
+                  featureInfo.innerHTML ="<h2>"+ region + "</h2>"+
+                  "<p>Retrouvez les dates de formation et les contacts pour vous y inscrire <b><a href = '"+
                   url+"' target = '_blank'>ici</a></b></p>";
                 } else {
-                  featureInfo.innerHTML = pictoContact+"".concat(contact,"</p><p>",contact2,"</p><p>",contact3,"</p>") +
+                  featureInfo.innerHTML = "<h2>"+ region + "</h2>"+
+                  pictoContact+"".concat(contact,"</p><p>",contact2,"</p><p>",contact3,"</p>") +
                   "<p>".concat(info(structure),"</p>") +
                   "<p>"+email + "</p>"+
                   "<p>"+phone + "</p>"+

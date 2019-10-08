@@ -47,7 +47,7 @@
 }
 
 #content {
-	width: 400px;
+	width: 420px;
 	position: absolute;
 	left: 70px;
 }
@@ -74,7 +74,7 @@ ul {
 
 #closeContent {
   width: 50px;
-	right: -27%;
+	right: -20%;
 	text-align: center;
   position: absolute;
   /* color: white; */
