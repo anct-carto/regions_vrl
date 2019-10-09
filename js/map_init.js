@@ -34,14 +34,13 @@ function initMap() {
     maxZoom: 11,
     minZoom: 6,
     zoomSnap: 0.25,
-    attribution:'CGET - Couleurs Debuf O.'
     // layers:[basemap_layer],
   }).setView([46.5, 6.8], 6,{ animation: true });
   mymap.zoomControl.setPosition('topright');
   mymap.touchZoom.disable();
   mymap.doubleClickZoom.disable();
   mymap.scrollWheelZoom.disable();
-  mymap.attributionControl.addAttribution("<a href='https://cartotheque.cget.gouv.fr/cartes' style='text-decoration:none;' target='_blank'>CGET</a> - Couleurs Olivier DEBUF'")
+  mymap.attributionControl.addAttribution("<a href='https://cartotheque.cget.gouv.fr/cartes' style='text-decoration:none;' target='_blank'>CGET</a> - Couleurs Olivier DEBUF")
 
   // CGET LOGO
   L.Control.Watermark = L.Control.extend({
