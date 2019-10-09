@@ -48,11 +48,11 @@ var interval = setInterval(function() {
 
 
 function showContent() {
-  if (panel.style.width === '0px') {
+  if (panel.style.width === '0%') {
     panelSlide();
   } else {
     closeBtn.style.transform = 'rotate(-180deg)';
-    panel.style.width = '0px';
+    panel.style.width = '0%';
     let t = setInterval(function() {
       mymap.setZoom(6);
       mymap.setView([46.5, 3]);
