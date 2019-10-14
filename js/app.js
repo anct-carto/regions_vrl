@@ -103,9 +103,8 @@ function drawregions() {
                   featureInfo.innerHTML = "<h2>"+ region + "</h2>"+
                   pictoContact+"".concat(contact,"</p><p>",contact2,"</p><p>",contact3,"</p>") +
                   "<p>".concat(info(structure),"</p>") +
-                  "<p>"+ email + "</p>"+
-                  "<p>"+ phone + "</p>"+
-                  url
+                  "<a href = 'mailto:"+ email + "'>"+email+"</a>"+
+                  "<p>"+ phone + "</p>"+ url
                 }
               }
               // bouton retour
