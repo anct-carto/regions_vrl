@@ -54,7 +54,7 @@ function showContent() {
     closeBtn.style.transform = 'rotate(-180deg)';
     panel.style.width = '0%';
     let t = setInterval(function() {
-      mymap.setZoom(6);
+      mymap.setZoom(5.55);
       mymap.setView([46.5, 3]);
       clearInterval(t)
     },0);
