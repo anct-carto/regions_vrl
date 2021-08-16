@@ -5,15 +5,15 @@
 
 drawregions();
 //Chargement tableau de données google sheet
-var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1ZCMzIqMnkw8I9fPtN8pOxgyRx_oQv1kneZxVtfjggRs/edit#gid=0';
+var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQIAr5Avsf9txZJKBOpV8Huy4uXMblw_QiI8HbRPHBrO2Bf9esMd7qfjoWPcyJjKoNvkOJVdUofLWBs/pub?output=csv';
 
 function init() {
-  Tabletop.init({
-    key: publicSpreadsheetUrl,
-    callback: showInfo,
-    simpleSheet: true
-  })
-}
+  Papa.parse(publicSpreadsheetUrl, {
+      download:true,
+      header:true,
+      complete:(results) => showInfo(results.data)
+  });
+};
 
 tabDrive = [];
 
