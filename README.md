@@ -2,4 +2,4 @@
 
 Page officielle : https://agence-cohesion-territoires.gouv.fr/formation-valeurs-de-la-republique-et-laicite-185
 
-Lien direct : anct-carto.github.io/regions_vrl
+Lien direct : https://anct-carto.github.io/regions_vrl
